@@ -5,5 +5,6 @@ export default (app: Application) => {
 
   router.get('/', controller.home.index);
   router.get('/cloud/management/util/getMenuJson.sa', controller.mockMenu.index);
+  router.post('/cloud/management/rest/np/login/captcha', controller.mockUser.captcha);
   router.get('/casServer/user', controller.mockUser.index);
 };
